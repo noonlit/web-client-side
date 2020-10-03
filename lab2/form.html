@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="form.css">
+    <title>Lab 2 - formular</title>
+</head>
+<body>
+<header>
+    <h1>Exemplu formular complex</h1>
+    <nav>
+        <p>Navigare</p>
+        <ul>
+            <li><a href="../index.html" title="Pagina principala" target="_blank">Lista laboratoare</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <form action="#" method="GET">
+        <table>
+            <tr>
+                <th class="yellow" colspan="6" scope="col">Fisa de internare</th>
+            </tr>
+            <tr>
+                <th scope="row"><label for="nume">Nume</label></th>
+                <td colspan="3">
+                    <input id="nume" name="nume" type="text" placeholder="Ion Popescu">
+                </td>
+                <th scope="row"><label for="data">Data</label></th>
+                <td>
+                    <input id="data" name="data" type="date">
+                </td>
+            </tr>
+            <tr>
+                <th scope="row"><label for="adresa">Adresa</label></th>
+                <td colspan="5">
+                    <input id="adresa" name="adresa" type="text" placeholder="str. Mihail Kogalniceanu numarul 1">
+                </td>
+            </tr>
+            <tr>
+                <th scope="row"><label for="oras">Oras</label></th>
+                <td>
+                    <input id="oras" name="oras" type="text" placeholder="Oras">
+                </td>
+                <th scope="row"><label for="judet">Judet</label></th>
+                <td>
+                    <input id="judet" name="judet" type="text" maxlength="2" placeholder="CJ">
+                </td>
+                <th scope="row"><label for="cod_postal">Cod postal</label></th>
+                <td>
+                    <input id="cod_postal" name="cod_postal" type="number" placeholder="400000">
+                </td>
+            </tr>
+            <tr>
+                <th scope="row"><label for="email">Email</label></th>
+                <td colspan="3">
+                    <input id="email" name="email" type="email" placeholder="exemplu@email.com">
+                </td>
+                <th scope="row">Sex</th>
+                <td>
+                    <input type="radio" id="masculin" name="sex" value="1" checked="checked"><label for="masculin">M</label>
+                    <input type="radio" id="feminin" name="sex" value="2"> <label for="feminin">F</label>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row"><label for="tel_fix">Tel. fix</label></th>
+                <td colspan="3">
+                    <input id="tel_fix" name="tel_fix" type="tel" placeholder="0234222222">
+                </td>
+                <th scope="row"><label for="tel_mobil">Tel. mobil</label></th>
+                <td>
+                    <input id="tel_mobil" name="tel_mobil" type="tel" placeholder="0733333333">
+                </td>
+            </tr>
+            <tr>
+                <th class="red" colspan="6" scope="col">Medicamente prescrise</th>
+            </tr>
+            <tr>
+                <th scope="col">Nr.</th>
+                <th scope="col" colspan="2">Cod</th>
+                <th scope="col" colspan="2">Medicament</th>
+                <th scope="col">Cantitate</th>
+            </tr>
+            <tr>
+                <th scope="row">1</th>
+                <td colspan="2"><label for="cod_1"></label><input id="cod_1" name="cod_1" type="text" placeholder="Cod medicament"></td>
+                <td colspan="2"><label for="medicament_1"></label><input id="medicament_1" name="medicament_1" type="text" placeholder="Nume medicament"></td>
+                <td><label for="cantitate_1"></label><input id="cantitate_1" name="cantitate_1" type="number" placeholder="Cantitate medicament"></td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td colspan="2"><label for="cod_2"></label><input id="cod_2" name="cod_2" type="text" placeholder="Cod medicament"></td>
+                <td colspan="2"><label for="medicament_2"></label><input id="medicament_2" name="medicament_2" type="text" placeholder="Nume medicament"></td>
+                <td><label for="cantitate_2"></label><input id="cantitate_2" name="cantitate_2" type="number" placeholder="Cantitate medicament"></td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td colspan="2"><label for="cod_3"></label><input id="cod_3" name="cod_3" type="text" placeholder="Cod medicament"></td>
+                <td colspan="2"><label for="medicament_3"></label><input id="medicament_3" name="medicament_3" type="text" placeholder="Nume medicament"></td>
+                <td><label for="cantitate_3"></label><input id="cantitate_3" name="cantitate_3" type="number" placeholder="Cantitate medicament"></td>
+            </tr>
+            <tr>
+                <th scope="row"><label for="simptome">Simptome</label></th>
+                <td colspan="5">
+                    <select id="simptome" name="simptome" multiple>
+                        <option value="1">Raceala</option>
+                        <option value="2">Gripa</option>
+                        <option value="3">Dureri de cap</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row"><label for="observatii">Observatii</label></th>
+                <td colspan="5">
+                    <textarea id="observatii" placeholder="A se completa cu eventualele observatii"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="6">
+                    <div class="button-wrap">
+                        <input type="submit" name="submit" value="Salveaza si tipareste">
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </form>
+</main>
+<footer>
+    <p><a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwww.scs.ubbcluj.ro%2F~baci0176%2Flab2%2Fform.html" target="_blank">Rezultat validare</a></p>
+</footer>
+</body>
+</html>

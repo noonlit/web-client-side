@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+nav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #5f0f4e;
+    padding: 30px 0;
+}
+
+header, main, footer {
+    margin-left: 200px; /* Same as the width of the sidenav */
+    font-size: 20px; /* Increased text to enable scrolling */
+}
+
+p {
+    font-size: 18px;
+}
+
+header {
+    background: #fff;
+    border-bottom: 1px solid #e0e4e8;
+    text-align: center;
+    padding: 15px;
+}
+
+main {
+    padding: 20px 20px 100px 20px;
+}
+
+footer {
+    padding: 20px;
+    background: #fff;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+header h1 {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    background-color: #f3f5f9;
+}
+
+nav {
+    padding: 0;
+}
+
+nav h2 {
+    color: #fff;
+    text-align: center;
+    margin: 0 30px;
+}
+
+nav div.item {
+    padding: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+nav, nav a {
+    color: #ffffff;
+    text-align: center;
+}
+
+nav a {
+    padding: 10px 0;
+    text-decoration: none;
+    display: block;
+    border: none;
+    background: none;
+    width:100%;
+    cursor: pointer;
+    outline: none;
+}
+
+nav ul {
+    list-style: none;
+    position: absolute;
+    background-color: #5f0f4e;
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+}
+
+nav .item:hover {
+    background-color: #751360;
+}
+
+nav .item:hover > ul {
+    transition: height 0.8s, transform 0.3s, visibility 0s, opacity 0.4s linear;
+    transform: translate(70%);
+    visibility: visible;
+    opacity: 1;
+    height: auto;
+    position: relative;
+    background: #520c43;
+    box-shadow: -9px 0 5px -4px rgba(0,0,0,0.5);
+}
+
+article {
+    background: #fff;
+    margin: 20px 0;
+    padding-bottom: 10px;
+}
+
+article h2 {
+    font-size: 1.2em;
+    margin: 10px 0 10px 0;
+    padding: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    background: #67AECA;
+}
+
+article p {
+    padding: 10px;
+}
+
+article ul, article ol {
+    margin: 20px 0;
+    padding-left: 40px;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+.picture-background {
+    background-image: url("../../img/cats/7.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 500px;
+    max-width: 300px;
+    margin: 0 10px;
+}
+
+.picture-background:hover {
+    background-image: url("../../img/cats/8.jpg");
+}

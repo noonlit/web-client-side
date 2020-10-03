@@ -1,0 +1,30 @@
+table {
+    margin: 10px;
+}
+table img {
+    width: 300px;
+    height: auto;
+    margin: 10px 10px 5px 10px;
+}
+
+table tr {
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    text-align: center;
+    padding: 10px 0 0 0;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: transform .5s, height .5s, opacity .3s, ease-out;
+}
+
+td:hover .overlay {
+    opacity: 0.8;
+    height: 120px;
+    background-color: #fff;
+    transform: translateY(-130px);
+    width: 320px;
+    z-index: 1;
+}

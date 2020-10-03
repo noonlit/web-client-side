@@ -1,0 +1,46 @@
+#gallery-wrapper {
+    height: 480px; /* approx as tall as the main image + thumbnails */
+}
+
+.main-image {
+    position: absolute;
+    left: 230px;
+    width: 500px;
+    height: 300px;
+    opacity: 0;
+}
+
+.main-image img {
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#default-main-image {
+   opacity: 1;
+}
+
+.thumbnail {
+    top: 300px; /* as tall as the main image */
+    position: relative;
+    float: left;
+    width: 150px;
+    height: 150px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.thumbnail img {
+    border: 1px solid #dddddd;
+    background-color: #ffffff;
+    padding: 5px;
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#gallery-wrapper .thumbnail:hover + .main-image {
+    transition: opacity 0.3s ease-in-out;
+    opacity: 1;
+    z-index: 1;
+}

@@ -1,0 +1,50 @@
+@keyframes grow-90 {
+    from { width: 0; }
+    to   { width: 90%; }
+}
+
+@keyframes grow-60 {
+    from { width: 0; }
+    to   { width: 60%; }
+}
+
+@keyframes grow-30 {
+    from { width: 0; }
+    to   { width: 30%; }
+}
+
+.charts {
+    padding: 10px;
+}
+
+.charts p {
+    padding: 5px 0;
+}
+
+.bar-container {
+    width: 100%;
+    background-color: #ddd;
+}
+
+.skills {
+    text-align: right;
+    color: white;
+}
+
+.beauty {
+    animation: grow-90 2s;
+    max-width: 90%;
+    background-color: #238823;
+}
+
+.agility {
+    animation: grow-60 2s;
+    max-width: 60%;
+    background-color: #FFB600;
+}
+
+.iq {
+    animation: grow-30 2s;
+    max-width: 30%;
+    background-color: #DD2222;
+}

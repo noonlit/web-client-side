@@ -1,0 +1,131 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <title>Lab 3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="css/table.css">
+    <link rel="stylesheet" href="css/bars.css">
+</head>
+<body>
+<header>
+    <hgroup>
+        <h1>Welcome!</h1>
+    </hgroup>
+    <nav id="assignment-2">
+        <div class="item">
+            <a href="index.html" title="Home">Home</a>
+        </div>
+        <div class="item">
+            <span>Interests</span>
+            <ul>
+                <li class="item"><a href="reading.html" title="Reading" target="_blank">Reading</a>
+                    <ul>
+                        <li class="item"><a href="#">test menu item</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="item"><a href="special.html" title="Special effects" target="_blank">Special effects</a></div>
+        <div class="item">
+            <a href="https://www.goodreads.com/user/show/10904739-noonlit" title="Goodreads link" target="_blank">Talk to me on Goodreads!</a>
+        </div>
+    </nav>
+</header>
+<br>
+<main>
+    <article>
+        <h2>Purpose</h2>
+        <p> This is the entry point for a collection of pages about aspects of my interests.</p>
+    </article>
+
+    <article>
+        <h2>General info</h2>
+        <p>I like cats a lot, and I can't help but share some pictures with you.</p>
+
+        <span id="assignment-1"></span>
+        <div id="gallery-wrapper">
+            <!-- first image -->
+            <span class="thumbnail"><img src="../img/cats/1.jpg" alt="cat"></span>
+            <span class="main-image" id="default-main-image"><img src="../img/cats/1.jpg" alt="cat"></span>
+
+            <!-- second image -->
+            <span class="thumbnail"><img src="../img/cats/2.jpg" alt="cat"></span>
+            <span class="main-image"><img src="../img/cats/2.jpg" alt="cat"></span>
+
+            <!-- third image -->
+            <span class="thumbnail"><img src="../img/cats/3.jpg" alt="cat"></span>
+            <span class="main-image"><img src="../img/cats/3.jpg" alt="cat"></span>
+        </div>
+    </article>
+
+    <article>
+        <h2>More about cats</h2>
+        <p>Here are some cats in tabular form.</p>
+
+        <span id="assignment-3"></span>
+        <table>
+            <tr>
+                <th scope="col">My cats</th>
+                <th scope="col">Other cats</th>
+            </tr>
+            <tr>
+                <td>
+                    <img src="../img/cats/4.jpg" alt="cat">
+                    <div class="overlay">My cat #1</div>
+                </td>
+                <td>
+                    <img src="../img/cats/1.jpg" alt="cat">
+                    <div class="overlay">Not my cat #1</div>
+                </td>
+            </tr>
+            <tr>
+                <td><img src="../img/cats/5.jpg" alt="cat">
+                    <div class="overlay">My cat #2</div>
+                </td>
+                <td>
+                    <img src="../img/cats/6.jpg" alt="cat">
+                    <div class="overlay">Not my cat #2</div>
+                </td>
+            </tr>
+        </table>
+    </article>
+
+    <article>
+        <h2>Stats about cats</h2>
+        <p>Here are some stats about my cats.</p>
+
+        <span id="assignment-4"></span>
+        <div class="charts">
+            <p>Beauty</p>
+            <div class="bar-container">
+                <div class="skills beauty">90%</div>
+            </div>
+
+            <p>Agility</p>
+            <div class="bar-container">
+                <div class="skills agility">60%</div>
+            </div>
+
+            <p>Intelligence</p>
+            <div class="bar-container">
+                <div class="skills iq">30%</div>
+            </div>
+        </div>
+    </article>
+
+    <article>
+        <h2>The (background) element of surprise</h2>
+        <p>Please hover above this image.</p>
+
+        <span id="assignment-5"></span>
+        <div class="picture-background"></div>
+    </article>
+</main>
+<footer>
+    <p>The information presented here is valid for 2020.</p>
+    <p><a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwww.scs.ubbcluj.ro%2F~baci0176%2Flab3%2Findex.html" target="_blank">Validation result</a></p>
+</footer>
+</body>
+</html>

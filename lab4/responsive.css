@@ -1,0 +1,316 @@
+/* General elements */
+html {
+    background-color: #303030;
+}
+
+body {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    background-color: lightyellow;
+    margin: 2%;
+    padding: 0 1%;
+}
+
+h1, h2, h3, h4 {
+    text-transform: uppercase;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+h2 {
+    font-weight: 500;
+}
+
+h3 {
+    font-weight: 400;
+}
+
+/* Header */
+header h1 {
+    font-weight: 700;
+    text-align: center;
+    font-size: 10vw;
+}
+
+header h1 .emphasis {
+    display:block;
+    font-size: 15vw;
+    font-family: 'Rubik Mono One', sans-serif;
+}
+
+header h1, header h2 {
+    font-size: 6.1vw;
+}
+
+.divider {
+    border-top: 2px solid #b2b2a0;
+    width: 100%;
+    margin: 10px 0;
+}
+
+
+/* Navigation */
+nav {
+    display:flex;
+    margin-top: 1%;
+}
+
+#logo {
+    width: 30%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo img {
+    max-height: 80px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 70%;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+nav ul li {
+    width: 16%;
+    border-right: 2px solid #b2b2a0;
+    padding: 3% 3% 5% 3%;
+    transition: all 0.5s ease;
+}
+
+nav ul li:hover > a {
+    color: #303030;
+}
+
+nav ul li .title {
+    text-transform: uppercase;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: large;
+}
+
+nav ul li:first-child {
+    border-left: 2px solid #b2b2a0
+}
+
+nav ul li span {
+    display:block;
+}
+
+/* Black cards beneath navigation */
+.cards {
+    display:flex;
+    align-content: space-evenly;
+    padding: 2% 0;
+}
+
+.card {
+    background-color: black;
+    height: 250px;
+    width: 18%;
+    color: white;
+    padding: 2%;
+    box-shadow: -9px 9px 5px 0 rgba(178,178,160,1);
+    transition: background-color 0.5s ease;
+}
+
+.card:not(:first-child):not(:last-child) {
+    margin: 0 auto;
+}
+
+.card:first-child {
+    margin-right: auto;
+}
+
+.card:last-child {
+    margin-left: auto;
+}
+
+.card:hover {
+    background-color: #303030
+}
+
+.card .content {
+    margin-top: 10%;
+}
+
+.card h2, .card p {
+    max-width: 50%;
+    color: lightyellow;
+}
+
+/* Main content */
+main {
+    display: flex;
+}
+
+main section {
+    width: 60%;
+    padding: 1%;
+}
+
+main aside {
+    width: 40%;
+    padding: 1%;
+    border-left: 2px solid #b2b2a0;
+}
+
+aside p::first-letter {
+    font-size: 4.5em;
+    float: left;
+    margin-top: -.15em;
+}
+
+.row {
+    display: flex;
+}
+
+.col-md-25 {
+    width: 25%;
+}
+.col-md-50 {
+    width: 50%;
+}
+.col img {
+    max-height: 100px;
+    border: 3px solid beige;
+}
+.row h4 {
+    text-transform: uppercase;
+    color: #b2b2a0;
+}
+.muted {
+    font-size:smaller;
+    text-transform:uppercase;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* Footer */
+#footer {
+    display:flex;
+    max-width: 40%;
+    margin-top: 1%;
+}
+
+#footer #social {
+    width: 50%;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.col-md-100 {
+    width: 100%;
+}
+
+#footer .icon {
+    margin: 1px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-weight:bold;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+#footer #copyright {
+    width: 50%;
+    padding: 5%;
+    border-left: 2px solid #b2b2a0;
+    border-right: 2px solid #b2b2a0;
+}
+
+#copyright h4 {
+    text-transform: uppercase;
+    margin-top: 0;
+    font-size: larger;
+}
+
+@media (max-width:1000px){
+    #footer {
+        max-width: 60%;
+    }
+
+    nav ul {
+        width: 80%;
+    }
+
+    #logo {
+        width: 20%;
+    }
+}
+
+@media (max-width:600px) {
+    nav, nav ul {
+        flex-direction: column;
+    }
+
+    nav ul, #logo {
+        width: 100%;
+    }
+
+    nav ul li {
+        width: 100%;
+        border-left: none;
+        border-right: none;
+        border-top: 2px solid #b2b2a0;
+        padding: 3% 0;
+    }
+
+    nav ul li:first-child {
+        border-left: none;
+    }
+
+    nav ul li .content {
+        display: none;
+    }
+
+    .cards, .cards + .divider {
+        display: none;
+    }
+
+    main section, #about {
+        display: none;
+    }
+
+    main aside {
+        width: 100%;
+        border: none;
+    }
+
+    #footer {
+        max-width: 100%;
+        flex-direction: column;
+    }
+
+    #footer #social {
+        padding: 2% 0;
+        width: 100%;
+        flex-direction: row;
+    }
+
+    .col-sm-50 {
+        width: 50%;
+    }
+
+    #footer #copyright {
+        padding: 2% 0;
+        width: 100%;
+        border-left: none;
+        border-right: none;
+        border-top: 2px solid #b2b2a0;
+    }
+}
+
+@media (max-width:300px){
+
+    .col-xs-100 {
+        width: 100%;
+    }
+}
+

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 7 - jQuery</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="lab7.css" rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script src="lab7.js" async></script>
+</head>
+<body>
+    <main>
+        <div class="container-fluid">
+            <h1>Lab 7 - jQuery</h1>
+            <div id="#requirement-1">
+                <div class="card bg-light">
+                    <div class="card-header">Sa se scrie un program care va sterge toate link-urile din document la click pe un buton.</div>
+                    <div class="card-body">
+                        <ul class="list-group">
+                            <li class="list-group-item"><a href="#">Link #1</a></li>
+                            <li class="list-group-item"><a href="#">Link #2</a></li>
+                            <li class="list-group-item"><a href="#">Link #3</a></li>
+                            <li class="list-group-item"><a href="#">Link #4</a></li>
+                            <li class="list-group-item"><a href="#">Link #5</a></li>
+                        </ul>
+                        <br>
+                        <button type="button" id="delete-links-button" class="btn btn-danger">Danger - removes all links!</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="#requirement-2">
+                <div class="card bg-light">
+                    <div class="card-header">Sa se scrie un program care afiseaza cate secunde a stat un utilizator cu mouse-ul pe un obiect.</div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-6 my-auto" id="target">Place mouse over this!</div>
+                            <div class="col-3 my-auto">Mouseover time: <span id="timer" class="font-weight-bold">0</span>s</div>
+                            <div class="col-3 my-auto">Total mouseover time: <span  id="timer-total" class="font-weight-bold">0</span>s</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="#requirement-3">
+                <div class="card bg-light">
+                    <div class="card-header">Se considera un formular care contine un input de tip numar de telefon care trebuie sa respecte urmatorul format (+40) 777 777 777. Sunt acceptate caracterele +, (, ) si orice cifra de la 0 la 9. Sa se scrie o functie de validare a datelor introduse in input care la fiecare schimbare a continutului input-ului sa arate in dreptul input-ului o bulina rosie daca acesta nu este valida si o bulina verde daca acesta este valid.</div>
+                    <div class="card-body">
+                        Accepted:
+                        <ul>
+                            <li>9 digits, with prefix: (+40) 777 777 777</li>
+                            <li>9 digits, without prefix, with spaces: 777 777 777</li>
+                            <li>9 digits, without prefix, without spaces: 777777777</li>
+                        </ul>
+                        <form>
+                            <div class="form-group row">
+                                <label for="tel" class="col-2 col-form-label">Telephone</label>
+                                <div class="col-4">
+                                    <input class="form-control" type="tel" id="tel">
+                                </div>
+                                <div class="col-1 my-auto"><div id="tel-validation"></div></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div id="#requirement-4">
+                <div class="card bg-light">
+                    <div class="card-header">Sa se construiasca dinamic un combobox (select) cu 6 optiuni.</div>
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group row">
+                                <div class="col-4" id="dynamic-select-container"></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
